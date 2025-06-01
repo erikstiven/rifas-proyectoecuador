@@ -473,7 +473,7 @@ MAIN
 	</div>
 
 	<svg class="position-absolute" style="bottom:0px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-		<path fill="#360254" fill-opacity="1" d="M0,160L120,186.7C240,213,480,267,720,256C960,245,1200,171,1320,133.3L1440,96L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
+		<path fill="<?php if ($template == null): ?>#360254<?php else: ?><?php echo urldecode($template->color2_template); ?><?php endif; ?>" fill-opacity="1" d="M0,160L120,186.7C240,213,480,267,720,256C960,245,1200,171,1320,133.3L1440,96L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
 	</svg>
 
 </div>

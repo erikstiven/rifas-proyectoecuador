@@ -19,8 +19,27 @@ Validar existencia de sorteo
 =============================================*/
 
 
-$raffle = 0;
+$raffle = 1;
 
+
+/*==================================
+Traer info de la plantilla
+==================================*/
+
+$url = "templates?linkTo=status_template&equalTo=1&orderBy=id_template&orderMode=ASC";
+
+$method = "GET";
+$fields = array();
+
+$template = CurlController::request($url, $method, $fields);
+
+if ($template->status == 200) {
+
+	$template = $template->results[0];
+} else {
+
+	$template = null;
+}
 
 
 ?>
@@ -45,6 +64,12 @@ $raffle = 0;
 	<link rel="stylesheet" href="/views/assets/css/coming_soon.css">
 	<link rel="stylesheet" href="/views/assets/css/style.css">
 
+	<?php if ($template == null): ?>
+		<link rel="stylesheet" href="/views/assets/css/style.css">
+	<?php else: ?>
+		<?php include "views/assets/css/style.css.php" ?>
+	<?php endif ?>
+
 
 	<!-- Latest compiled JavaScript -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -56,37 +81,31 @@ $raffle = 0;
 <body <?php if ($raffle == 0): ?> class="coming-soon" <?php endif ?>>
 	<?php
 
-if($raffle == 1){
+	if ($raffle == 1) {
 
-	    include "views/modules/top/top.php";
+		include "views/modules/top/top.php";
 
-	    if(!empty($routesArray[0])){
+		if (!empty($routesArray[0])) {
 
-	        if($routesArray[0] == "checkout" || $routesArray[0] == "thanks"){
+			if ($routesArray[0] == "checkout" || $routesArray[0] == "thanks") {
 
-	            include "views/pages/".$routesArray[0]."/".$routesArray[0].".php";
+				include "views/pages/" . $routesArray[0] . "/" . $routesArray[0] . ".php";
+			} else {
 
-	        }else{
+				include "views/pages/home/home.php";
+			}
+		} else {
 
-	            include "views/pages/home/home.php"; 
+			include "views/pages/home/home.php";
+		}
 
-	        }
-
-	    }else{
-
-	       include "views/pages/home/home.php"; 
-	    
-	    }
-
-	    include "views/modules/footer/footer.php";
-	    include "views/modules/modals/terms.php";
-	    include "views/modules/modals/policy.php";
-	    include "views/modules/modals/contact.php";
-
-	}else{
+		include "views/modules/footer/footer.php";
+		include "views/modules/modals/terms.php";
+		include "views/modules/modals/policy.php";
+		include "views/modules/modals/contact.php";
+	} else {
 
 		include "views/pages/coming-soon/coming-soon.php";
-
 	}
 
 	?>
