@@ -1,22 +1,22 @@
-	<!--=================================
-Modal
+<!--=================================
+Modal del Video
 ==================================-->
-	<!-- The Modal -->
-	<div class="modal fade" id="myVideo">
-		<div class="modal-dialog modal-lg modal-dialog-centered">
-			<div class="modal-content">
 
-				<!-- Modal body -->
-				<div class="modal-body">
+<div class="modal fade" id="myVideo">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
 
-					<button type="button" class="btn btn-default rounded rounded-circle border-0 float-end" data-bs-dismiss="modal"><i class="bi bi-x-lg"></i></button>
+      <!-- Modal body -->
+      <div class="modal-body">
 
-					<video class="rounded" controls="" style="width:100%">
-						<source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4">
-					</video>
+        <button type="button" class="btn btn-default rounded rounded-circle border-0 float-end" data-bs-dismiss="modal"><i class="bi bi-x-lg"></i></button>
 
-				</div>
+        <video class="rounded" controls="" style="width:100%">
+          <source src="<?php echo urldecode($raffle->video_product) ?>">
+        </video> 
 
-			</div>
-		</div>
-	</div>
+      </div>
+
+    </div>
+  </div>
+</div>

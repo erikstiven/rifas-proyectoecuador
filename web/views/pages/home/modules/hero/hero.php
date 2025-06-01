@@ -17,7 +17,7 @@ HERO
                 <div class="p-3 py-lg-5 px-lg-5 position-relative" style="z-index:1">
 
                     <h4 class="text-uppercase josefin-sans-700 t1">Ahora tienes la oportunidad</h4>
-                    <h1 class="text-uppercase josefin-sans-700 display-2">De ganar un coche</h1>
+                    <h1 class="text-uppercase josefin-sans-700 display-2"><?php echo urldecode($raffle->text_raffle) ?></h1>
                     <p class="h5 josefin-sans-700">¿Serás tú nuestro próximo afortunado ganador?</p>
 
                     <div class="btn-group py-4">
@@ -45,9 +45,9 @@ HERO
 
     <div>
 
-        <?php 
+        <?php
 
-           include "views/modules/svgs/svgs.php";
+        include "views/modules/svgs/svgs.php";
 
         ?>
 

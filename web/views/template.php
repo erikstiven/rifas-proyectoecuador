@@ -18,8 +18,19 @@ foreach ($routesArray as $key => $value) {
 Validar existencia de sorteo
 =============================================*/
 
+$url = "relations?rel=raffles,products&type=raffle,product&linkTo=status_raffle&equalTo=1&orderBy=id_raffle&orderMode=ASC";
+$method = "GET";
+$fields = array();
 
-$raffle = 1;
+$raffle = CurlController::request($url, $method, $fields);
+
+if ($raffle->status == 200) {
+
+	$raffle = $raffle->results[0];
+} else {
+
+	$raffle = null;
+}
 
 
 /*==================================
@@ -78,10 +89,10 @@ if ($template->status == 200) {
 
 </head>
 
-<body <?php if ($raffle == 0): ?> class="coming-soon" <?php endif ?>>
+<body <?php if ($raffle == null): ?> class="coming-soon" <?php endif ?>>
 	<?php
 
-	if ($raffle == 1) {
+	if (!empty($raffle)) {
 
 		include "views/modules/top/top.php";
 

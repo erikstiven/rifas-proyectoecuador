@@ -19,50 +19,50 @@ class TemplateController{
 	Función para dar formato a las fechas
 	=============================================*/
 
-	// static public function formatDate($type, $value){
+	static public function formatDate($type, $value){
 
-	// 	date_default_timezone_set("America/Bogota");
-	// 	setlocale(LC_TIME, 'es.UTF-8','esp'); //Para traer dias y meses en español
+		date_default_timezone_set("America/Guayaquil");
+		setlocale(LC_TIME, 'es.UTF-8','esp'); //Para traer dias y meses en español
 
-	// 	if($type == 1){
+		if($type == 1){
 
-	// 		return strftime("%d de %B, %Y", strtotime($value));
-	// 	}
+			return strftime("%d de %B, %Y", strtotime($value));
+		}
 
-	// 	if($type == 2){
+		if($type == 2){
 
-	// 		return strftime("%b %Y", strtotime($value));
+			return strftime("%b %Y", strtotime($value));
 
-	// 	}
+		}
 
-	// 	if($type == 3){
+		if($type == 3){
 
-	// 		return strftime("%d - %m - %Y", strtotime($value));
+			return strftime("%d - %m - %Y", strtotime($value));
 
-	// 	}
+		}
 
-	// 	if($type == 4){
+		if($type == 4){
 
-	// 		if(strftime("%H", strtotime($value)) < 13){
+			if(strftime("%H", strtotime($value)) < 13){
 
-	// 			$abr = "AM";
+				$abr = "AM";
 			
-	// 		}else{
+			}else{
 
-	// 			$abr = "PM";
-	// 		}
+				$abr = "PM";
+			}
 
-	// 		return strftime("%A %d de %B %Y a las %I ".$abr, strtotime($value));
+			return strftime("%A %d de %B %Y a las %I ".$abr, strtotime($value));
 
-	// 	}
+		}
 
-	// 	if($type == 5){
+		if($type == 5){
 
-	// 		return strftime("%D", strtotime($value));
+			return strftime("%D", strtotime($value));
 
-	// 	}
+		}
 
-	// }
+	}
 
 	/*=============================================
 	Función para mayúscula inicial

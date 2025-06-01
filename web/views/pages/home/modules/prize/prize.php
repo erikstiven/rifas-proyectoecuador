@@ -1,85 +1,95 @@
+<?php
+
+$url = "galleries?linkTo=id_product_gallery&equalTo=" . $raffle->id_product;
+
+$galleries = CurlController::request($url, $method, $fields);
+
+if ($galleries->status == 200) {
+
+	$galleries = $galleries->results;
+} else {
+
+	$galleries = array();
+}
+?>
 <!--=================================
 PRIZE
 ==================================-->
 
-	<div class="container-fluid p-0 position-relative" id="prize">
+<div class="container-fluid p-0 position-relative" id="prize">
 
-		<h1 class="display-4 josefin-sans-700 text-uppercase text-center">CONOCE EL PREMIO</h1>
+	<h1 class="display-4 josefin-sans-700 text-uppercase text-center">CONOCE EL PREMIO</h1>
 
-		<div class="container">
-			<!-- Carousel -->
-			<div id="demo" class="carousel slide" data-bs-ride="carousel">
+	<div class="container">
 
-				<!-- Indicators/dots -->
-				<div class="carousel-indicators">
-					<button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-					<button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-					<button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-				</div>
+		
+        <?php if (!empty($galleries)): ?>
+                
+        <!-- Carousel -->
+            <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
-				<!-- The slideshow/carousel -->
-				<div class="carousel-inner rounded">
-					<div class="carousel-item active">
-						<img src="/views/assets/img/slide.png" alt="Los Angeles" class="d-block" style="width:100%">
-						<div class="carousel-caption">
-							<h3>The Breeze Zodiac</h3>
-							<p>We had such a great time in LA!</p>
-						</div>
-					</div>
-					<div class="carousel-item">
-						<img src="/views/assets/img/slide.png" alt="Chicago" class="d-block" style="width:100%">
-						<div class="carousel-caption">
-							<h3>The Breeze Zodiac</h3>
-							<p>Thank you, Chicago!</p>
-						</div>
-					</div>
-					<div class="carousel-item">
-						<img src="/views/assets/img/slide.png" alt="New York" class="d-block" style="width:100%">
-						<div class="carousel-caption">
-							<h3>The Breeze Zodiac</h3>
-							<p>We love the Big Apple!</p>
-						</div>
-					</div>
-				</div>
+                <!-- Indicators/dots -->
+                <div class="carousel-indicators">
 
-				<!-- Left and right controls/icons -->
-				<button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-					<span class="carousel-control-prev-icon"></span>
-				</button>
-				<button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-					<span class="carousel-control-next-icon"></span>
-				</button>
-			</div>
+                    <?php foreach ($galleries as $key => $value): ?>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="<?php echo $key ?>" <?php if ($key == 0): ?>class="active"<?php endif ?> ></button>
+                    <?php endforeach ?>
+                </div>
 
-			<div class="row pt-5 py-lg-5">
+                <!-- The slideshow/carousel -->
+                <div class="carousel-inner rounded">
 
-				<div class="col-12 col-lg-8">
+                    <?php foreach ($galleries as $key => $value): ?>
 
+                        <div class="carousel-item <?php if ($key == 0): ?>active<?php endif ?>">
+                            <img src="<?php echo urldecode($value->img_gallery) ?>" alt="<?php echo urldecode($value->title_gallery) ?>" class="d-block" style="width:100%">
+                            <div class="carousel-caption">
+                                <h3><?php echo urldecode($value->title_gallery) ?></h3>
+                                <p><?php echo urldecode($value->description_gallery) ?></p>
+                            </div>
+                        </div>
+                        
+                    <?php endforeach ?>
 
-					<h5 class="text-uppercase t1">Participa ahora para tener la oportunidad de ganar</h5>
-					<h1 class="text-uppercase josefin-sans-700 display-4">The Breeze Zodiac</h1>
-					<p class="h5">Sorteo 28 febrero, 2025 <small><span class="px-3">|</span>Por las dos últimas cifras de la lotería del Paísita - Canal Teleantioquia</small></p>
+                </div>
 
-					<hr style="border:1px solid #fff">
+                <!-- Left and right controls/icons -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
 
-					<h3>Descripción general del premio</h3>
-					<p>Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam perferendis facilis sequi quidem at architecto itaque voluptatibus quaerat sapiente, consequatur harum, amet, dolore laudantium quis ut atque beatae enim natus.</p>
+        <?php endif ?>
+		<div class="row pt-5 py-lg-5">
 
+			 <div class="col-12 col-lg-8">
+               
+              
+                <h5 class="text-uppercase t1">Participa ahora para tener la oportunidad de ganar</h5> 
+                <h1 class="text-uppercase josefin-sans-700 display-4">The Breeze Zodiac</h1> 
+                <p class="h5">Sorteo <?php echo TemplateController::formatDate(4, urldecode($raffle->end_date_raffle)) ?><small><span class="px-3">|</span><?php echo urldecode($raffle->location_raffle) ?></small></p> 
 
-				</div>
+                <hr style="border:1px solid #fff">
 
-				<div class="col-12 col-lg-4 py-5">
+                <h3>Descripción general del premio</h3>
+                <p><?php echo urldecode($raffle->description_product) ?></p>
+               
 
-					<div class="card bg bg-light p-4 rounded">
-						<h3 class="mt-3">Tickets Vendidos</h3>
+            </div>
 
-						<div class="progress my-3">
-							<div class="progress-bar" style="width:70%">70%</div>
-						</div>
+			<div class="col-12 col-lg-4 py-5">
 
-						<a href="#main" class="my-4 btn btn-default btn-lg border rounded">Participa Ahora</a>
+				<div class="card bg bg-light p-4 rounded">
+					<h3 class="mt-3">Tickets Vendidos</h3>
+
+					<div class="progress my-3">
+						<div class="progress-bar" style="width:70%">70%</div>
 					</div>
 
+					<a href="#main" class="my-4 btn btn-default btn-lg border rounded">Participa Ahora</a>
 				</div>
 
 			</div>
@@ -87,3 +97,5 @@ PRIZE
 		</div>
 
 	</div>
+
+</div>

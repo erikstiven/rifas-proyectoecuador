@@ -11,5 +11,5 @@
 </figure>
 
 <figure class="mt-5 p-3 text-center position-relative" style="z-index:1000">
-    <img src="/views/assets/img/hero-car.png" class="img-fluid rounded">
+    <img src="<?php echo urldecode($raffle->img_product) ?>" class="img-fluid rounded">
 </figure>

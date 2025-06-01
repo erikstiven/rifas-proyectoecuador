@@ -21,7 +21,7 @@ TOP
                 <div class="d-flex">
 
                     <div class="ms-auto h5 p-3 mt-2">
-                        <a href="https://wa.me/573001234567?text=duda" target="_blank"><i class="bi bi-whatsapp"></i> Atención al cliente</a>
+                        <a href="https://wa.me/<?php echo urldecode($raffle->phone_raffle) ?>?text=duda" target="_blank"><i class="bi bi-whatsapp"></i> Atención al cliente</a>
                     </div>
                 </div>
             </div>

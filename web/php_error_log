@@ -1,66 +1,16 @@
-[01-Jun-2025 06:12:43 Europe/Berlin] PHP Warning:  Undefined variable $method in C:\xampp\htdocs\raffle\web\views\template.php on line 31
-[01-Jun-2025 06:12:43 Europe/Berlin] PHP Warning:  Undefined variable $fields in C:\xampp\htdocs\raffle\web\views\template.php on line 31
-[01-Jun-2025 06:12:43 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\web\views\template.php on line 33
-[01-Jun-2025 06:12:44 Europe/Berlin] PHP Warning:  Undefined variable $method in C:\xampp\htdocs\raffle\web\views\template.php on line 31
-[01-Jun-2025 06:12:44 Europe/Berlin] PHP Warning:  Undefined variable $fields in C:\xampp\htdocs\raffle\web\views\template.php on line 31
-[01-Jun-2025 06:12:44 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\web\views\template.php on line 33
-[01-Jun-2025 06:12:46 Europe/Berlin] PHP Warning:  Undefined variable $method in C:\xampp\htdocs\raffle\web\views\template.php on line 31
-[01-Jun-2025 06:12:46 Europe/Berlin] PHP Warning:  Undefined variable $fields in C:\xampp\htdocs\raffle\web\views\template.php on line 31
-[01-Jun-2025 06:12:46 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\web\views\template.php on line 33
-[01-Jun-2025 06:12:46 Europe/Berlin] PHP Warning:  Undefined variable $method in C:\xampp\htdocs\raffle\web\views\template.php on line 31
-[01-Jun-2025 06:12:46 Europe/Berlin] PHP Warning:  Undefined variable $fields in C:\xampp\htdocs\raffle\web\views\template.php on line 31
-[01-Jun-2025 06:12:47 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\web\views\template.php on line 33
-[01-Jun-2025 06:12:47 Europe/Berlin] PHP Warning:  Undefined variable $method in C:\xampp\htdocs\raffle\web\views\template.php on line 31
-[01-Jun-2025 06:12:47 Europe/Berlin] PHP Warning:  Undefined variable $fields in C:\xampp\htdocs\raffle\web\views\template.php on line 31
-[01-Jun-2025 06:12:47 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\web\views\template.php on line 33
-[01-Jun-2025 06:12:47 Europe/Berlin] PHP Warning:  Undefined variable $method in C:\xampp\htdocs\raffle\web\views\template.php on line 31
-[01-Jun-2025 06:12:47 Europe/Berlin] PHP Warning:  Undefined variable $fields in C:\xampp\htdocs\raffle\web\views\template.php on line 31
-[01-Jun-2025 06:12:47 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\web\views\template.php on line 33
-[01-Jun-2025 06:12:48 Europe/Berlin] PHP Warning:  Undefined variable $method in C:\xampp\htdocs\raffle\web\views\template.php on line 31
-[01-Jun-2025 06:12:48 Europe/Berlin] PHP Warning:  Undefined variable $fields in C:\xampp\htdocs\raffle\web\views\template.php on line 31
-[01-Jun-2025 06:12:48 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\web\views\template.php on line 33
-[01-Jun-2025 06:12:48 Europe/Berlin] PHP Warning:  Undefined variable $method in C:\xampp\htdocs\raffle\web\views\template.php on line 31
-[01-Jun-2025 06:12:48 Europe/Berlin] PHP Warning:  Undefined variable $fields in C:\xampp\htdocs\raffle\web\views\template.php on line 31
-[01-Jun-2025 06:12:48 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\web\views\template.php on line 33
-[01-Jun-2025 06:12:48 Europe/Berlin] PHP Warning:  Undefined variable $method in C:\xampp\htdocs\raffle\web\views\template.php on line 31
-[01-Jun-2025 06:12:48 Europe/Berlin] PHP Warning:  Undefined variable $fields in C:\xampp\htdocs\raffle\web\views\template.php on line 31
-[01-Jun-2025 06:12:48 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\web\views\template.php on line 33
-[01-Jun-2025 06:12:49 Europe/Berlin] PHP Warning:  Undefined variable $method in C:\xampp\htdocs\raffle\web\views\template.php on line 31
-[01-Jun-2025 06:12:49 Europe/Berlin] PHP Warning:  Undefined variable $fields in C:\xampp\htdocs\raffle\web\views\template.php on line 31
-[01-Jun-2025 06:12:49 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\web\views\template.php on line 33
-[01-Jun-2025 06:12:49 Europe/Berlin] PHP Warning:  Undefined variable $method in C:\xampp\htdocs\raffle\web\views\template.php on line 31
-[01-Jun-2025 06:12:49 Europe/Berlin] PHP Warning:  Undefined variable $fields in C:\xampp\htdocs\raffle\web\views\template.php on line 31
-[01-Jun-2025 06:12:49 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\web\views\template.php on line 33
-[01-Jun-2025 06:12:49 Europe/Berlin] PHP Warning:  Undefined variable $method in C:\xampp\htdocs\raffle\web\views\template.php on line 31
-[01-Jun-2025 06:12:49 Europe/Berlin] PHP Warning:  Undefined variable $fields in C:\xampp\htdocs\raffle\web\views\template.php on line 31
-[01-Jun-2025 06:12:49 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\web\views\template.php on line 33
-[01-Jun-2025 06:12:50 Europe/Berlin] PHP Warning:  Undefined variable $method in C:\xampp\htdocs\raffle\web\views\template.php on line 31
-[01-Jun-2025 06:12:50 Europe/Berlin] PHP Warning:  Undefined variable $fields in C:\xampp\htdocs\raffle\web\views\template.php on line 31
-[01-Jun-2025 06:12:50 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\web\views\template.php on line 33
-[01-Jun-2025 06:12:50 Europe/Berlin] PHP Warning:  Undefined variable $method in C:\xampp\htdocs\raffle\web\views\template.php on line 31
-[01-Jun-2025 06:12:50 Europe/Berlin] PHP Warning:  Undefined variable $fields in C:\xampp\htdocs\raffle\web\views\template.php on line 31
-[01-Jun-2025 06:12:50 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\web\views\template.php on line 33
-[01-Jun-2025 06:13:03 Europe/Berlin] PHP Warning:  Undefined variable $method in C:\xampp\htdocs\raffle\web\views\template.php on line 31
-[01-Jun-2025 06:13:03 Europe/Berlin] PHP Warning:  Undefined variable $fields in C:\xampp\htdocs\raffle\web\views\template.php on line 31
-[01-Jun-2025 06:13:03 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\web\views\template.php on line 33
-[01-Jun-2025 06:13:03 Europe/Berlin] PHP Warning:  Undefined variable $method in C:\xampp\htdocs\raffle\web\views\template.php on line 31
-[01-Jun-2025 06:13:03 Europe/Berlin] PHP Warning:  Undefined variable $fields in C:\xampp\htdocs\raffle\web\views\template.php on line 31
-[01-Jun-2025 06:13:03 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\web\views\template.php on line 33
-[01-Jun-2025 06:13:08 Europe/Berlin] PHP Warning:  Undefined variable $method in C:\xampp\htdocs\raffle\web\views\template.php on line 31
-[01-Jun-2025 06:13:08 Europe/Berlin] PHP Warning:  Undefined variable $fields in C:\xampp\htdocs\raffle\web\views\template.php on line 31
-[01-Jun-2025 06:13:08 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\web\views\template.php on line 33
-[01-Jun-2025 06:13:08 Europe/Berlin] PHP Warning:  Undefined variable $method in C:\xampp\htdocs\raffle\web\views\template.php on line 31
-[01-Jun-2025 06:13:08 Europe/Berlin] PHP Warning:  Undefined variable $fields in C:\xampp\htdocs\raffle\web\views\template.php on line 31
-[01-Jun-2025 06:13:08 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\web\views\template.php on line 33
-[01-Jun-2025 06:13:09 Europe/Berlin] PHP Warning:  Undefined variable $method in C:\xampp\htdocs\raffle\web\views\template.php on line 31
-[01-Jun-2025 06:13:09 Europe/Berlin] PHP Warning:  Undefined variable $fields in C:\xampp\htdocs\raffle\web\views\template.php on line 31
-[01-Jun-2025 06:13:09 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\web\views\template.php on line 33
-[01-Jun-2025 06:13:09 Europe/Berlin] PHP Warning:  Undefined variable $method in C:\xampp\htdocs\raffle\web\views\template.php on line 31
-[01-Jun-2025 06:13:09 Europe/Berlin] PHP Warning:  Undefined variable $fields in C:\xampp\htdocs\raffle\web\views\template.php on line 31
-[01-Jun-2025 06:13:09 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\web\views\template.php on line 33
-[01-Jun-2025 06:33:31 Europe/Berlin] PHP Warning:  Undefined variable $method in C:\xampp\htdocs\raffle\web\views\template.php on line 31
-[01-Jun-2025 06:33:31 Europe/Berlin] PHP Warning:  Undefined variable $fields in C:\xampp\htdocs\raffle\web\views\template.php on line 31
-[01-Jun-2025 06:33:31 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\web\views\template.php on line 33
-[01-Jun-2025 06:33:31 Europe/Berlin] PHP Warning:  Undefined variable $method in C:\xampp\htdocs\raffle\web\views\template.php on line 31
-[01-Jun-2025 06:33:31 Europe/Berlin] PHP Warning:  Undefined variable $fields in C:\xampp\htdocs\raffle\web\views\template.php on line 31
-[01-Jun-2025 06:33:32 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\web\views\template.php on line 33
+[01-Jun-2025 23:49:31 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method TemplateController::formatDate() in C:\xampp\htdocs\raffle\web\views\pages\home\modules\prize\prize.php:88
+Stack trace:
+#0 C:\xampp\htdocs\raffle\web\views\pages\home\home.php(6): include()
+#1 C:\xampp\htdocs\raffle\web\views\template.php(106): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\raffle\web\controllers\template.controller.php(14): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\raffle\web\index.php(26): TemplateController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\raffle\web\views\pages\home\modules\prize\prize.php on line 88
+[02-Jun-2025 00:02:29 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method TemplateController::formatDate() in C:\xampp\htdocs\raffle\web\views\pages\home\modules\prize\prize.php:73
+Stack trace:
+#0 C:\xampp\htdocs\raffle\web\views\pages\home\home.php(6): include()
+#1 C:\xampp\htdocs\raffle\web\views\template.php(106): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\raffle\web\controllers\template.controller.php(14): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\raffle\web\index.php(26): TemplateController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\raffle\web\views\pages\home\modules\prize\prize.php on line 73
