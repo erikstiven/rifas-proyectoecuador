@@ -46,12 +46,13 @@ class CurlController
     $endpoint = "https://api-m.sandbox.paypal.com/"; //TEST
     //$endpoint = "https://api-m.paypal.com/"; //LIVE
 
-    $clientID = ""; //TEST
-    $secretClient = ""; //TEST
+    $clientID = "AXpql4RWvMYn6zypplykPUtqlkIQfJcEjnfW7FOauwVFaQEqGhCHy-QCB599SehK7R1zBwTs_ZLKILcs"; //TEST
+    $secretClient = "EH_NmJQbGj0jDxe3sYK4yUeAcKFcQu5PKpQYcgcUv5Ve7oqbTsbvVbay3-H5l-7ahlYiFp4zeZyBtcAl"; //TEST
 
-    // $clientID = ""; //LIVE
-    // $secretClient = ""; //LIVE
+    // $clientID = "AXpql4RWvMYn6zypplykPUtqlkIQfJcEjnfW7FOauwVFaQEqGhCHy-QCB599SehK7R1zBwTs_ZLKILcs"; //LIVE
+    // $secretClient = "EH_NmJQbGj0jDxe3sYK4yUeAcKFcQu5PKpQYcgcUv5Ve7oqbTsbvVbay3-H5l-7ahlYiFp4zeZyBtcAl"; //LIVE
     $basic = base64_encode($clientID . ":" . $secretClient);
+    
 
     $curl = curl_init();
 
@@ -75,6 +76,8 @@ class CurlController
     $response = curl_exec($curl);
 
     curl_close($curl);
+
+
 
     $response = json_decode($response);
 
@@ -111,46 +114,46 @@ class CurlController
     }
   }
 
-  /*=============================================
-  Pasarela de pagos D-LOCAL
-  =============================================*/
+  // /*=============================================
+  // Pasarela de pagos D-LOCAL
+  // =============================================*/
 
-  static public function dlocal($url, $method, $fields)
-  {
+  // static public function dlocal($url, $method, $fields)
+  // {
 
-    $endpoint = "https://api-sbx.dlocalgo.com/"; //TEST
-    // $endpoint = "https://api.dlocalgo.com/"; //LIVE
+  //   $endpoint = "https://api-sbx.dlocalgo.com/"; //TEST
+  //   // $endpoint = "https://api.dlocalgo.com/"; //LIVE
 
-    $apiKey = ""; //TEST
-    $secretKey = ""; //TEST
+  //   $apiKey = ""; //TEST
+  //   $secretKey = ""; //TEST
 
-    // $apiKey = ""; //LIVE
-    // $secretKey = ""; //TLIVE
+  //   // $apiKey = ""; //LIVE
+  //   // $secretKey = ""; //TLIVE
 
-    $curl = curl_init();
+  //   $curl = curl_init();
 
-    curl_setopt_array($curl, array(
-      CURLOPT_URL => $endpoint . $url,
-      CURLOPT_RETURNTRANSFER => true,
-      CURLOPT_ENCODING => '',
-      CURLOPT_MAXREDIRS => 10,
-      CURLOPT_TIMEOUT => 0,
-      CURLOPT_FOLLOWLOCATION => true,
-      CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-      CURLOPT_CUSTOMREQUEST => $method,
-      CURLOPT_POSTFIELDS => $fields,
-      CURLOPT_HTTPHEADER => array(
-        'Content-Type: application/json',
-        'Authorization: Bearer ' . $apiKey . ':' . $secretKey
-      ),
-    ));
+  //   curl_setopt_array($curl, array(
+  //     CURLOPT_URL => $endpoint . $url,
+  //     CURLOPT_RETURNTRANSFER => true,
+  //     CURLOPT_ENCODING => '',
+  //     CURLOPT_MAXREDIRS => 10,
+  //     CURLOPT_TIMEOUT => 0,
+  //     CURLOPT_FOLLOWLOCATION => true,
+  //     CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+  //     CURLOPT_CUSTOMREQUEST => $method,
+  //     CURLOPT_POSTFIELDS => $fields,
+  //     CURLOPT_HTTPHEADER => array(
+  //       'Content-Type: application/json',
+  //       'Authorization: Bearer ' . $apiKey . ':' . $secretKey
+  //     ),
+  //   ));
 
-    $response = curl_exec($curl);
+  //   $response = curl_exec($curl);
 
-    curl_close($curl);
+  //   curl_close($curl);
 
-    $response = json_decode($response);
+  //   $response = json_decode($response);
 
-    return $response;
-  }
-}
+  //   return $response;
+   }
+

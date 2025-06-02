@@ -65,6 +65,8 @@
 
 		<?php if (!empty($columnsTable)): ?>
 
+			<option value="0">0</option>
+
 			<?php foreach ($columnsTable as $index => $item): ?>
 
 				<option value="<?php echo json_decode(json_encode($item),true)[array_keys((array)$item)[0]] ?>" <?php if (!empty($data) && json_decode(json_encode($item),true)[array_keys((array)$item)[0]] == $data[$module->columns[$i]->title_column]): ?> selected <?php endif ?>><?php echo json_decode(json_encode($item),true)[array_keys((array)$item)[0]] ?> - <?php echo urldecode(json_decode(json_encode($item),true)[array_keys((array)$item)[1]]) ?></option>

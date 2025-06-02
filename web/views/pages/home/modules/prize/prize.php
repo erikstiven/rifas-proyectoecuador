@@ -1,28 +1,42 @@
-<?php
+<?php 
 
-$url = "galleries?linkTo=id_product_gallery&equalTo=" . $raffle->id_product;
+$url = "galleries?linkTo=id_product_gallery&equalTo=".$raffle->id_product;
 
-$galleries = CurlController::request($url, $method, $fields);
+$galleries = CurlController::request($url,$method,$fields);
 
-if ($galleries->status == 200) {
+if($galleries->status == 200){
 
-	$galleries = $galleries->results;
-} else {
+    $galleries = $galleries->results;
 
-	$galleries = array();
+}else{
+
+    $galleries = array(); 
 }
+
+/*=============================================
+Ticks vendidos
+=============================================*/
+
+$percent = 0;
+
+if(!empty($sales)){
+
+    $percent = ceil($totalSales*100/$diff);
+}
+
 ?>
+
+
 <!--=================================
 PRIZE
 ==================================-->
 
 <div class="container-fluid p-0 position-relative" id="prize">
 
-	<h1 class="display-4 josefin-sans-700 text-uppercase text-center">CONOCE EL PREMIO</h1>
+   <h1 class="display-4 josefin-sans-700 text-uppercase text-center">CONOCE EL PREMIO</h1>
 
-	<div class="container">
+   <div class="container">
 
-		
         <?php if (!empty($galleries)): ?>
                 
         <!-- Carousel -->
@@ -63,9 +77,10 @@ PRIZE
             </div>
 
         <?php endif ?>
-		<div class="row pt-5 py-lg-5">
 
-			 <div class="col-12 col-lg-8">
+        <div class="row pt-5 py-lg-5">
+            
+            <div class="col-12 col-lg-8">
                
               
                 <h5 class="text-uppercase t1">Participa ahora para tener la oportunidad de ganar</h5> 
@@ -80,22 +95,22 @@ PRIZE
 
             </div>
 
-			<div class="col-12 col-lg-4 py-5">
+            <div class="col-12 col-lg-4 py-5">
+                
+                <div class="card bg bg-light p-4 rounded">
+                    <h3 class="mt-3">Tickets Vendidos</h3>
 
-				<div class="card bg bg-light p-4 rounded">
-					<h3 class="mt-3">Tickets Vendidos</h3>
+                    <div class="progress my-3">
+                      <div class="progress-bar" style="width:<?php echo $percent ?>%"><?php echo $percent ?>%</div>
+                    </div>
 
-					<div class="progress my-3">
-						<div class="progress-bar" style="width:70%">70%</div>
-					</div>
+                     <a href="#main" class="my-4 btn btn-default btn-lg border rounded">Participa Ahora</a>
+                </div>
 
-					<a href="#main" class="my-4 btn btn-default btn-lg border rounded">Participa Ahora</a>
-				</div>
+            </div>
 
-			</div>
+        </div>
 
-		</div>
-
-	</div>
-
+    </div>
+  
 </div>

@@ -116,11 +116,6 @@ InputMask para Whatsapp
 =============================================*/
 
 var phoneMask = IMask(document.getElementById('phone-mask'), {
-  mask: '+{00}(000)000-00-00'
-}).on('accept', function() {
-  document.getElementById('phone-complete').style.display = '';
-  document.getElementById('phone-unmasked').innerHTML = phoneMask.unmaskedValue;
-}).on('complete', function() {
-  document.getElementById('phone-complete').style.display = 'inline-block';
-});
+  mask: '+{593}(000)000-00-00'
+})
 

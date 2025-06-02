@@ -97,7 +97,17 @@ $(document).on("click",".buyNumbers",function(){
             return;
         }
 
-        window.location = "/checkout?numbers="+localStorage.getItem("numbersArray");
+        var numbers = "";
+
+        JSON.parse(localStorage.getItem("numbersArray")).forEach((e,i)=>{
+            
+            numbers += e+",";  
+
+        })
+
+        numbers = numbers.slice(0,-1);
+
+        window.location = "/checkout?numbers="+ numbers;
     }    
 
 })

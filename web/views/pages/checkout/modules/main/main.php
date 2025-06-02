@@ -9,13 +9,18 @@ MAIN
     </figure>
 
     <?php
-    include "views/modules/countdown/countdown.php";
-    ?>
 
+    include "views/modules/countdown/countdown.php";
+
+    ?>
 
     <div class="container position-relative" style="bottom:50px">
 
-        <form action="POST" class="needs-validation" novalidate>
+        <form method="POST" class="needs-validation" novalidate>
+
+            <input type="hidden" value="<?php echo $_GET["numbers"] ?>" name="numbers">
+            <input type="hidden" value="<?php echo $raffle->id_raffle ?>" name="raffle">
+
             <div class="row">
 
                 <div class="offset-3 col-6">
@@ -26,8 +31,8 @@ MAIN
                         <h1 class="text-center display-1 my-0"><i class="fas fa-angle-down"></i></h1>
 
                         <!--==============================================
-                    NOMBRE Y APELLIDO
-                    ================================================-->
+                        NOMBRE Y APELLIDO
+                        ================================================-->
 
                         <div class="row p-0">
 
@@ -78,8 +83,8 @@ MAIN
                         </div>
 
                         <!--==============================================
-                    NÚMERO WHATSAPP
-                    ================================================-->
+                        NÚMERO WHATSAPP
+                        ================================================-->
 
                         <div class="row">
 
@@ -104,8 +109,8 @@ MAIN
                         </div>
 
                         <!--==============================================
-                    CORREO ELECTRÓNICO
-                    ================================================-->
+                        CORREO ELECTRÓNICO
+                        ================================================-->
 
                         <div class="row">
 
@@ -130,8 +135,8 @@ MAIN
                         </div>
 
                         <!--==============================================
-                    CONFIRMA CORREO ELECTRÓNICO
-                    ================================================-->
+                        CONFIRMA CORREO ELECTRÓNICO
+                        ================================================-->
 
                         <div class="row">
 
@@ -157,8 +162,8 @@ MAIN
                         </div>
 
                         <!--==============================================
-                    DETALLES DE LA COMPRA
-                    ================================================-->
+                        DETALLES DE LA COMPRA
+                        ================================================-->
 
                         <div class="row p-1">
 
@@ -175,29 +180,7 @@ MAIN
                                             <div class="py-2 pl-3 josefin-sans-700 h6">Número(s) Elegido(s): </div>
 
                                             <div class="py-2 pl-3 josefin-sans-700 h6">
-
-
-
-                                                5,
-
-
-
-
-
-
-                                                18,
-
-
-
-
-
-
-                                                30
-
-
-
-
-
+                                                <?php echo $_GET["numbers"] ?>
                                             </div>
 
                                         </div>
@@ -205,7 +188,7 @@ MAIN
                                         <div class="d-flex justify-content-between">
 
                                             <div class="py-2 pl-3 josefin-sans-700 h4">Total a pagar:</div>
-                                            <div class="py-2 pr-3 josefin-sans-700 h4">$30.00 USD</div>
+                                            <div class="py-2 pr-3 josefin-sans-700 h4">$<?php echo number_format(count($numbers) * $raffle->price_raffle, 2) ?> USD</div>
 
                                         </div>
 
@@ -218,8 +201,8 @@ MAIN
                         </div>
 
                         <!--==============================================
-                    FORMA DE PAGO
-                    ================================================-->
+                        FORMA DE PAGO
+                        ================================================-->
 
                         <div class="row p-1">
 
@@ -282,8 +265,8 @@ MAIN
                         </div>
 
                         <!--==============================================
-                    PAGO
-                    ================================================-->
+                        PAGO
+                        ================================================-->
 
                         <div class="row">
 
@@ -352,12 +335,11 @@ MAIN
                         </div>
 
                         <!--==============================================
-                    BOTÓN
-                    ================================================-->
+                        BOTÓN
+                        ================================================-->
                         <div class="row">
 
-                            <div class="col px-5 pb-5">
-
+                            <div class="col-12 px-5 pb-3">
 
                                 <button type="submit" class="btn btn-block w-100 b1 rounded py-3 josefin-sans-700 text-uppercase border-0">Comprar ahora</button>
 
@@ -365,11 +347,20 @@ MAIN
 
                         </div>
 
+                        <?php
+                        require_once "controllers/orders.controller.php";
+                        $order = new OrdersController();
+                        $order->orderCreate();
+
+                        ?>
+
                     </div>
 
                 </div>
             </div>
+
         </form>
+
     </div>
 
 </div>
