@@ -13,7 +13,7 @@
                <div class="container">
 
                    <div class="h3 p-3 mt-1 mb-0">
-                       <a href="/" class="text-white"><i class="bi bi-amd"></i> RifaManía</a>
+                       <a href="/" class="text-white"><i class="bi bi-amd"></i> Proyecto Ecuador</a>
                    </div>
                </div>
 

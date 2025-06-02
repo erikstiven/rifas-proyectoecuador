@@ -198,9 +198,9 @@ class OrdersController
 									            Enviar correo electrónico
 									            =============================================*/
 
-									            $subject = "[RifaManía] Recibirá un pago de $".number_format($total,2)." por ".$_POST["optradio"];
+									            $subject = "[ProyectoEcuador] Recibirá un pago de $".number_format($total,2)." por ".$_POST["optradio"];
 									            $email = $raffle->email_raffle;
-									            $title = "[RifaManía] Pedido # ".$ref;
+									            $title = "[ProyectoEcuador] Pedido # ".$ref;
 									            $message = "<h4>¡Recibirá un pago de $".number_format($total,2)."!</h4><h5>De ".TemplateController::capitalize(trim($_POST["name"]))." ".TemplateController::capitalize(trim($_POST["surname"])).", whatsapp: ".trim($_POST["whatsapp"]).", email: ".trim($_POST["email"]).".<br> De los número(s): <h1><strong>".$_POST["numbers"]."</strong></h1></h5><br><br>";
 									             $link = $urlReturn.'/thanks?ref='.$ref;
 

@@ -117,9 +117,9 @@ if(isset($_GET["ref"])){
 							            Enviar correo electrónico
 							            =============================================*/
 
-							            $subject = "[RifaManía] Confirmación de compra # ".$order->ref_order;
+							            $subject = "[ProyectoEcuador] Confirmación de compra # ".$order->ref_order;
 							            $email = $order->email_client;
-							            $title = "[RifaManía] Pedido # ".$order->ref_order;
+							            $title = "[ProyectoEcuador] Pedido # ".$order->ref_order;
 							            $message = "<h4>¡Gracias por tu compra!</h4><h5>Estos son tus números elegidos: <h1><strong>".$order->numbers_order."</strong></h1><br><strong>¡ATENCIÓN!</strong><br><br> A continuación haga clic en el siguiente botón para que ingrese al grupo de WhatsApp del Sorteo y esté informado de los resultados</h5><br><br>";
 							             $link = $order->group_ws_raffle;
 

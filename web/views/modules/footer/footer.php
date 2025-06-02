@@ -34,6 +34,6 @@ FOOTER
 
 		<hr style="border: 1px solid #fff">
 
-		<h4 class="text-center py-5"><i class="bi bi-c-circle"></i> 2025 | <i class="bi bi-amd"></i> RifaManía</h4>
+		<h4 class="text-center py-5"><i class="bi bi-c-circle"></i> 2025 | <i class="bi bi-amd"></i> Proyecto Ecuador</h4>
 
 	</footer>

@@ -11,7 +11,7 @@ TOP
             <div class="col">
 
                 <div class="h3 p-3 mt-1 mb-0">
-                    <a href="/"><i class="bi bi-amd"></i> RifaManía</a>
+                    <a href="/"><i class="bi bi-amd"></i> Proyecto Ecuador</a>
                 </div>
 
             </div>
