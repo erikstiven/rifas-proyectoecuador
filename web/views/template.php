@@ -98,17 +98,17 @@ if ($template->status == 200) {
 
 		if (!empty($routesArray[0])) {
 
-			if ($routesArray[0] == "checkout" || $routesArray[0] == "thanks") {
+			$allowedPages = ["checkout", "thanks", "consultar"];
 
+			if (in_array($routesArray[0], $allowedPages)) {
 				include "views/pages/" . $routesArray[0] . "/" . $routesArray[0] . ".php";
 			} else {
-
 				include "views/pages/home/home.php";
 			}
 		} else {
-
 			include "views/pages/home/home.php";
 		}
+
 
 		include "views/modules/footer/footer.php";
 		include "views/modules/modals/terms.php";

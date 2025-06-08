@@ -21,7 +21,7 @@ FAQ
 
 <?php if (!empty($faqs)): ?>
 
-<div class="container-fluid p-0 py-5 position-relative" id="faq">
+<div class="container d-flex justify-content-center py-5" id="faq">
 
     <figure class="position-absolute colorImage" style="top:0;left:0;width:100%">
         <img src="/views/assets/img/winner.jpg" class="img-fluid w-100">
@@ -29,7 +29,7 @@ FAQ
 
      <h1 class="display-4 josefin-sans-700 text-uppercase text-center position-relative">PREGUNTAS FRECUENTES</h1>
   
-    <div class="container">
+    <div class="container d-flex justify-content-center py-5">
 
         <div class="row">
 
