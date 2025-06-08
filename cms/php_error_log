@@ -1,265 +1,357 @@
-[01-Jun-2025 23:53:02 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 40
-[01-Jun-2025 23:53:02 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\manage\blocks\forms\text.php:8
+[02-Jun-2025 22:46:09 Europe/Berlin] PHP Warning:  Undefined array key "win_raffle" in C:\xampp\htdocs\raffle\cms\controllers\dynamic.controller.php on line 49
+[07-Jun-2025 22:46:00 Europe/Berlin] PHP Warning:  Undefined array key "status_order" in C:\xampp\htdocs\raffle\cms\controllers\dynamic.controller.php on line 49
+[07-Jun-2025 22:46:37 Europe/Berlin] PHP Warning:  Undefined array key "status_order" in C:\xampp\htdocs\raffle\cms\controllers\dynamic.controller.php on line 49
+[07-Jun-2025 22:46:45 Europe/Berlin] PHP Warning:  Undefined array key "status_order" in C:\xampp\htdocs\raffle\cms\controllers\dynamic.controller.php on line 49
+[07-Jun-2025 22:47:20 Europe/Berlin] PHP Warning:  Undefined array key "status_sale" in C:\xampp\htdocs\raffle\cms\controllers\dynamic.controller.php on line 49
+[07-Jun-2025 22:47:37 Europe/Berlin] PHP Warning:  Undefined array key "status_sale" in C:\xampp\htdocs\raffle\cms\controllers\dynamic.controller.php on line 49
+[07-Jun-2025 22:48:10 Europe/Berlin] PHP Warning:  Undefined array key "status_sale" in C:\xampp\htdocs\raffle\cms\controllers\dynamic.controller.php on line 49
+[07-Jun-2025 22:49:30 Europe/Berlin] PHP Warning:  Undefined array key "status_sale" in C:\xampp\htdocs\raffle\cms\controllers\dynamic.controller.php on line 49
+[07-Jun-2025 22:49:40 Europe/Berlin] PHP Warning:  Undefined array key "status_sale" in C:\xampp\htdocs\raffle\cms\controllers\dynamic.controller.php on line 49
+[07-Jun-2025 22:50:22 Europe/Berlin] PHP Warning:  Undefined array key "status_order" in C:\xampp\htdocs\raffle\cms\controllers\dynamic.controller.php on line 104
+[07-Jun-2025 22:50:33 Europe/Berlin] PHP Warning:  Undefined array key "status_order" in C:\xampp\htdocs\raffle\cms\controllers\dynamic.controller.php on line 104
+[07-Jun-2025 22:50:56 Europe/Berlin] PHP Warning:  Undefined array key "status_sale" in C:\xampp\htdocs\raffle\cms\controllers\dynamic.controller.php on line 104
+[08-Jun-2025 05:02:47 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\controllers\pages.controller.php on line 50
+[08-Jun-2025 05:13:16 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 40
+[08-Jun-2025 05:27:53 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 40
+[08-Jun-2025 05:28:15 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 40
+[08-Jun-2025 05:28:57 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 40
+[08-Jun-2025 05:40:24 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 40
+[08-Jun-2025 05:41:11 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 40
+[08-Jun-2025 05:41:30 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 40
+[08-Jun-2025 05:41:30 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'DROP description_howtoplaysection' at line 1 in C:\xampp\htdocs\raffle\cms\controllers\modules.controller.php:193
 Stack trace:
-#0 C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\manage\blocks\blocks.php(19): include()
-#1 C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\manage\manage.php(95): include('C:\\xampp\\htdocs...')
-#2 C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php(70): include('C:\\xampp\\htdocs...')
-#3 C:\xampp\htdocs\raffle\cms\views\pages\dynamic\dynamic.php(73): include('C:\\xampp\\htdocs...')
-#4 C:\xampp\htdocs\raffle\cms\views\template.php(297): include('C:\\xampp\\htdocs...')
-#5 C:\xampp\htdocs\raffle\cms\controllers\template.controller.php(14): include('C:\\xampp\\htdocs...')
-#6 C:\xampp\htdocs\raffle\cms\index.php(25): TemplateController->index()
-#7 {main}
-  thrown in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\manage\blocks\forms\text.php on line 8
-[01-Jun-2025 23:53:05 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 40
-[01-Jun-2025 23:53:05 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\manage\blocks\forms\text.php:8
+#0 C:\xampp\htdocs\raffle\cms\controllers\modules.controller.php(193): PDOStatement->execute()
+#1 C:\xampp\htdocs\raffle\cms\views\template.php(431): ModulesController->manageModule()
+#2 C:\xampp\htdocs\raffle\cms\controllers\template.controller.php(14): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\raffle\cms\index.php(25): TemplateController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\raffle\cms\controllers\modules.controller.php on line 193
+[08-Jun-2025 05:41:34 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 40
+[08-Jun-2025 05:42:02 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 40
+[08-Jun-2025 05:42:13 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 40
+[08-Jun-2025 05:42:14 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'DROP step_howtoplaysection' at line 1 in C:\xampp\htdocs\raffle\cms\controllers\modules.controller.php:193
 Stack trace:
-#0 C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\manage\blocks\blocks.php(19): include()
-#1 C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\manage\manage.php(95): include('C:\\xampp\\htdocs...')
-#2 C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php(70): include('C:\\xampp\\htdocs...')
-#3 C:\xampp\htdocs\raffle\cms\views\pages\dynamic\dynamic.php(73): include('C:\\xampp\\htdocs...')
-#4 C:\xampp\htdocs\raffle\cms\views\template.php(297): include('C:\\xampp\\htdocs...')
-#5 C:\xampp\htdocs\raffle\cms\controllers\template.controller.php(14): include('C:\\xampp\\htdocs...')
-#6 C:\xampp\htdocs\raffle\cms\index.php(25): TemplateController->index()
-#7 {main}
-  thrown in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\manage\blocks\forms\text.php on line 8
-[01-Jun-2025 23:53:07 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 40
-[01-Jun-2025 23:53:07 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\manage\blocks\forms\text.php:8
+#0 C:\xampp\htdocs\raffle\cms\controllers\modules.controller.php(193): PDOStatement->execute()
+#1 C:\xampp\htdocs\raffle\cms\views\template.php(431): ModulesController->manageModule()
+#2 C:\xampp\htdocs\raffle\cms\controllers\template.controller.php(14): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\raffle\cms\index.php(25): TemplateController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\raffle\cms\controllers\modules.controller.php on line 193
+[08-Jun-2025 05:42:17 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 40
+[08-Jun-2025 05:42:17 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'DROP title_howtoplaysection' at line 1 in C:\xampp\htdocs\raffle\cms\controllers\modules.controller.php:193
 Stack trace:
-#0 C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\manage\blocks\blocks.php(19): include()
-#1 C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\manage\manage.php(95): include('C:\\xampp\\htdocs...')
-#2 C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php(70): include('C:\\xampp\\htdocs...')
-#3 C:\xampp\htdocs\raffle\cms\views\pages\dynamic\dynamic.php(73): include('C:\\xampp\\htdocs...')
-#4 C:\xampp\htdocs\raffle\cms\views\template.php(297): include('C:\\xampp\\htdocs...')
-#5 C:\xampp\htdocs\raffle\cms\controllers\template.controller.php(14): include('C:\\xampp\\htdocs...')
-#6 C:\xampp\htdocs\raffle\cms\index.php(25): TemplateController->index()
-#7 {main}
-  thrown in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\manage\blocks\forms\text.php on line 8
-[01-Jun-2025 23:53:09 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 40
-[01-Jun-2025 23:53:57 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 40
-[01-Jun-2025 23:53:59 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 40
-[01-Jun-2025 23:55:15 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 40
-[01-Jun-2025 23:55:18 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 40
-[02-Jun-2025 08:09:30 Europe/Berlin] PHP Warning:  Undefined array key "number_sale" in C:\xampp\htdocs\raffle\cms\controllers\dynamic.controller.php on line 49
-[02-Jun-2025 08:09:33 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 08:09:33 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 08:09:34 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 08:09:34 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 08:09:34 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 08:09:34 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 08:09:35 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 08:09:35 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 08:09:35 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 08:09:35 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 08:09:47 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 08:09:47 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 08:09:47 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 08:09:47 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 08:09:48 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 08:09:48 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 08:09:48 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 08:09:48 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 08:10:38 Europe/Berlin] PHP Warning:  Undefined array key "number_sale" in C:\xampp\htdocs\raffle\cms\controllers\dynamic.controller.php on line 49
-[02-Jun-2025 08:11:13 Europe/Berlin] PHP Warning:  Undefined array key "number_sale" in C:\xampp\htdocs\raffle\cms\controllers\dynamic.controller.php on line 49
-[02-Jun-2025 08:15:10 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 08:15:10 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 08:15:10 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 08:15:10 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 08:15:11 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 08:15:11 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 08:15:43 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 08:15:43 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 08:15:43 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 08:15:43 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 08:15:43 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 08:15:43 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 08:15:44 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 08:15:44 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 08:15:44 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 08:15:44 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 08:15:44 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 08:15:44 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 08:15:45 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 08:15:45 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 08:15:45 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 08:15:45 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 08:15:45 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 08:15:45 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 08:15:46 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 08:15:46 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 08:15:46 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 08:15:46 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 08:15:46 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 08:15:46 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 08:15:46 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 08:15:46 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 08:15:47 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 08:15:47 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 08:15:47 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 08:15:47 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 16:56:36 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 16:56:36 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:03 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:03 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:03 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:03 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:04 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:04 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:04 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:04 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:05 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:05 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:05 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:05 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:06 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:06 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:07 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:07 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:07 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:07 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:07 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:07 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:08 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:08 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:08 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:08 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:09 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:09 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:09 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:09 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:22 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:22 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:22 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:22 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:22 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:22 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:23 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:23 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:23 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:23 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:23 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:23 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:23 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:23 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:23 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:23 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:24 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:24 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:24 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:24 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:24 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:24 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:25 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:25 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:25 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:25 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:25 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:25 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:25 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:25 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:26 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:26 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:26 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:26 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:26 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:26 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:27 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:27 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:27 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:27 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:27 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:27 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:28 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:28 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:28 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:28 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:28 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:28 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:29 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:29 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:29 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:29 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:29 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:29 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:29 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:29 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:30 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:30 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:30 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:30 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:30 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:30 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:30 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:30 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:31 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:31 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:31 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:31 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:31 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:31 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:31 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:31 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:32 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:32 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:32 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:32 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:32 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:32 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:32 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:32 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:40 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:40 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:40 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:40 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:40 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:40 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:40 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:40 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:44 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:44 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:44 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:44 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:45 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:45 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:45 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:19:45 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:27:17 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:27:17 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:27:18 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:27:18 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:27:18 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:27:18 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:27:18 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 18:27:18 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 20:18:37 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 33
-[02-Jun-2025 20:18:37 Europe/Berlin] PHP Warning:  Attempt to read property "results" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
-[02-Jun-2025 20:18:37 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
-[02-Jun-2025 20:18:41 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\modules\sidebar.php on line 9
-[02-Jun-2025 20:18:41 Europe/Berlin] PHP Warning:  Attempt to read property "symbol_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\sidebar.php on line 24
-[02-Jun-2025 20:18:41 Europe/Berlin] PHP Warning:  Attempt to read property "title_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\sidebar.php on line 25
-[02-Jun-2025 20:18:45 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 295
-[02-Jun-2025 20:18:45 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 299
-[02-Jun-2025 20:18:45 Europe/Berlin] PHP Warning:  Attempt to read property "title_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 65
-[02-Jun-2025 20:18:45 Europe/Berlin] PHP Warning:  Attempt to read property "symbol_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 83
-[02-Jun-2025 20:18:45 Europe/Berlin] PHP Warning:  Attempt to read property "font_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 100
-[02-Jun-2025 20:18:45 Europe/Berlin] PHP Warning:  Attempt to read property "font_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 101
-[02-Jun-2025 20:18:45 Europe/Berlin] PHP Warning:  Attempt to read property "color_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 114
-[02-Jun-2025 20:18:45 Europe/Berlin] PHP Warning:  Attempt to read property "back_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 129
-[02-Jun-2025 20:18:51 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 33
-[02-Jun-2025 20:18:51 Europe/Berlin] PHP Warning:  Attempt to read property "results" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
-[02-Jun-2025 20:18:51 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
-[02-Jun-2025 20:18:55 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\modules\sidebar.php on line 9
-[02-Jun-2025 20:18:55 Europe/Berlin] PHP Warning:  Attempt to read property "symbol_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\sidebar.php on line 24
-[02-Jun-2025 20:18:55 Europe/Berlin] PHP Warning:  Attempt to read property "title_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\sidebar.php on line 25
-[02-Jun-2025 20:18:58 Europe/Berlin] PHP Warning:  Attempt to read property "title_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 65
-[02-Jun-2025 20:18:58 Europe/Berlin] PHP Warning:  Attempt to read property "symbol_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 83
-[02-Jun-2025 20:18:58 Europe/Berlin] PHP Warning:  Attempt to read property "font_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 100
-[02-Jun-2025 20:18:58 Europe/Berlin] PHP Warning:  Attempt to read property "font_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 101
-[02-Jun-2025 20:18:58 Europe/Berlin] PHP Warning:  Attempt to read property "color_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 114
-[02-Jun-2025 20:18:58 Europe/Berlin] PHP Warning:  Attempt to read property "back_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 129
-[02-Jun-2025 21:37:27 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 21:37:27 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 21:37:27 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 21:37:27 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 21:37:27 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 21:37:27 Europe/Berlin] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 509
-[02-Jun-2025 22:31:03 Europe/Berlin] PHP Warning:  Undefined array key "win_raffle" in C:\xampp\htdocs\raffle\cms\controllers\dynamic.controller.php on line 49
+#0 C:\xampp\htdocs\raffle\cms\controllers\modules.controller.php(193): PDOStatement->execute()
+#1 C:\xampp\htdocs\raffle\cms\views\template.php(431): ModulesController->manageModule()
+#2 C:\xampp\htdocs\raffle\cms\controllers\template.controller.php(14): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\raffle\cms\index.php(25): TemplateController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\raffle\cms\controllers\modules.controller.php on line 193
+[08-Jun-2025 05:42:35 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 40
+[08-Jun-2025 05:43:25 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 40
+[08-Jun-2025 05:43:27 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 40
+[08-Jun-2025 05:43:49 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 40
+[08-Jun-2025 05:44:00 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 40
+[08-Jun-2025 05:44:15 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 40
+[08-Jun-2025 05:44:53 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 40
+[08-Jun-2025 05:46:52 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 40
+[08-Jun-2025 05:46:53 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 40
+[08-Jun-2025 05:47:23 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 40
+[08-Jun-2025 05:48:19 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\pages\dynamic\tables\tables.php on line 40
+[08-Jun-2025 06:11:37 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\controllers\pages.controller.php on line 50
+[08-Jun-2025 06:11:43 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\controllers\pages.controller.php on line 50
+[08-Jun-2025 06:14:34 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\controllers\pages.controller.php on line 50
+[08-Jun-2025 17:43:48 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 33
+[08-Jun-2025 17:43:48 Europe/Berlin] PHP Warning:  Attempt to read property "results" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 17:43:48 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 18:46:19 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 33
+[08-Jun-2025 18:46:19 Europe/Berlin] PHP Warning:  Attempt to read property "results" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 18:46:19 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 18:46:23 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\modules\sidebar.php on line 9
+[08-Jun-2025 18:46:23 Europe/Berlin] PHP Warning:  Attempt to read property "symbol_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\sidebar.php on line 24
+[08-Jun-2025 18:46:23 Europe/Berlin] PHP Warning:  Attempt to read property "title_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\sidebar.php on line 25
+[08-Jun-2025 18:46:27 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 340
+[08-Jun-2025 18:46:27 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 344
+[08-Jun-2025 18:46:28 Europe/Berlin] PHP Warning:  Attempt to read property "title_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 65
+[08-Jun-2025 18:46:28 Europe/Berlin] PHP Warning:  Attempt to read property "symbol_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 83
+[08-Jun-2025 18:46:28 Europe/Berlin] PHP Warning:  Attempt to read property "font_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 100
+[08-Jun-2025 18:46:28 Europe/Berlin] PHP Warning:  Attempt to read property "font_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 101
+[08-Jun-2025 18:46:28 Europe/Berlin] PHP Warning:  Attempt to read property "color_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 114
+[08-Jun-2025 18:46:28 Europe/Berlin] PHP Warning:  Attempt to read property "back_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 129
+[08-Jun-2025 18:46:32 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 33
+[08-Jun-2025 18:46:32 Europe/Berlin] PHP Warning:  Attempt to read property "results" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 18:46:32 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 18:46:36 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\modules\sidebar.php on line 9
+[08-Jun-2025 18:46:36 Europe/Berlin] PHP Warning:  Attempt to read property "symbol_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\sidebar.php on line 24
+[08-Jun-2025 18:46:36 Europe/Berlin] PHP Warning:  Attempt to read property "title_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\sidebar.php on line 25
+[08-Jun-2025 18:46:40 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 340
+[08-Jun-2025 18:46:40 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 344
+[08-Jun-2025 18:46:40 Europe/Berlin] PHP Warning:  Attempt to read property "title_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 65
+[08-Jun-2025 18:46:40 Europe/Berlin] PHP Warning:  Attempt to read property "symbol_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 83
+[08-Jun-2025 18:46:40 Europe/Berlin] PHP Warning:  Attempt to read property "font_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 100
+[08-Jun-2025 18:46:40 Europe/Berlin] PHP Warning:  Attempt to read property "font_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 101
+[08-Jun-2025 18:46:40 Europe/Berlin] PHP Warning:  Attempt to read property "color_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 114
+[08-Jun-2025 18:46:40 Europe/Berlin] PHP Warning:  Attempt to read property "back_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 129
+[08-Jun-2025 18:46:46 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 33
+[08-Jun-2025 18:46:46 Europe/Berlin] PHP Warning:  Attempt to read property "results" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 18:46:46 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 18:46:50 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\modules\sidebar.php on line 9
+[08-Jun-2025 18:46:50 Europe/Berlin] PHP Warning:  Attempt to read property "symbol_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\sidebar.php on line 24
+[08-Jun-2025 18:46:50 Europe/Berlin] PHP Warning:  Attempt to read property "title_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\sidebar.php on line 25
+[08-Jun-2025 18:46:54 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 295
+[08-Jun-2025 18:46:54 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 299
+[08-Jun-2025 18:46:54 Europe/Berlin] PHP Warning:  Attempt to read property "title_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 65
+[08-Jun-2025 18:46:54 Europe/Berlin] PHP Warning:  Attempt to read property "symbol_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 83
+[08-Jun-2025 18:46:54 Europe/Berlin] PHP Warning:  Attempt to read property "font_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 100
+[08-Jun-2025 18:46:54 Europe/Berlin] PHP Warning:  Attempt to read property "font_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 101
+[08-Jun-2025 18:46:54 Europe/Berlin] PHP Warning:  Attempt to read property "color_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 114
+[08-Jun-2025 18:46:54 Europe/Berlin] PHP Warning:  Attempt to read property "back_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 129
+[08-Jun-2025 19:02:20 Europe/Berlin] PHP Fatal error:  Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\raffle\cms\controllers\curl.controller.php on line 28
+[08-Jun-2025 19:21:38 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 33
+[08-Jun-2025 19:21:38 Europe/Berlin] PHP Warning:  Attempt to read property "results" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:21:38 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:21:42 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\modules\sidebar.php on line 9
+[08-Jun-2025 19:21:42 Europe/Berlin] PHP Warning:  Attempt to read property "symbol_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\sidebar.php on line 24
+[08-Jun-2025 19:21:42 Europe/Berlin] PHP Warning:  Attempt to read property "title_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\sidebar.php on line 25
+[08-Jun-2025 19:21:47 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 340
+[08-Jun-2025 19:21:47 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 344
+[08-Jun-2025 19:21:47 Europe/Berlin] PHP Warning:  Attempt to read property "title_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 65
+[08-Jun-2025 19:21:47 Europe/Berlin] PHP Warning:  Attempt to read property "symbol_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 83
+[08-Jun-2025 19:21:47 Europe/Berlin] PHP Warning:  Attempt to read property "font_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 100
+[08-Jun-2025 19:21:47 Europe/Berlin] PHP Warning:  Attempt to read property "font_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 101
+[08-Jun-2025 19:21:47 Europe/Berlin] PHP Warning:  Attempt to read property "color_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 114
+[08-Jun-2025 19:21:47 Europe/Berlin] PHP Warning:  Attempt to read property "back_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 129
+[08-Jun-2025 19:21:51 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 33
+[08-Jun-2025 19:21:51 Europe/Berlin] PHP Warning:  Attempt to read property "results" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:21:51 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:21:55 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\modules\sidebar.php on line 9
+[08-Jun-2025 19:21:55 Europe/Berlin] PHP Warning:  Attempt to read property "symbol_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\sidebar.php on line 24
+[08-Jun-2025 19:21:55 Europe/Berlin] PHP Warning:  Attempt to read property "title_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\sidebar.php on line 25
+[08-Jun-2025 19:21:59 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 295
+[08-Jun-2025 19:21:59 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 299
+[08-Jun-2025 19:21:59 Europe/Berlin] PHP Warning:  Attempt to read property "title_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 65
+[08-Jun-2025 19:21:59 Europe/Berlin] PHP Warning:  Attempt to read property "symbol_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 83
+[08-Jun-2025 19:21:59 Europe/Berlin] PHP Warning:  Attempt to read property "font_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 100
+[08-Jun-2025 19:21:59 Europe/Berlin] PHP Warning:  Attempt to read property "font_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 101
+[08-Jun-2025 19:21:59 Europe/Berlin] PHP Warning:  Attempt to read property "color_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 114
+[08-Jun-2025 19:21:59 Europe/Berlin] PHP Warning:  Attempt to read property "back_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 129
+[08-Jun-2025 19:23:58 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 33
+[08-Jun-2025 19:23:58 Europe/Berlin] PHP Warning:  Attempt to read property "results" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:23:58 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:24:02 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\modules\sidebar.php on line 9
+[08-Jun-2025 19:24:02 Europe/Berlin] PHP Warning:  Attempt to read property "symbol_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\sidebar.php on line 24
+[08-Jun-2025 19:24:02 Europe/Berlin] PHP Warning:  Attempt to read property "title_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\sidebar.php on line 25
+[08-Jun-2025 19:24:06 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 340
+[08-Jun-2025 19:24:06 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 344
+[08-Jun-2025 19:24:06 Europe/Berlin] PHP Warning:  Attempt to read property "title_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 65
+[08-Jun-2025 19:24:06 Europe/Berlin] PHP Warning:  Attempt to read property "symbol_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 83
+[08-Jun-2025 19:24:06 Europe/Berlin] PHP Warning:  Attempt to read property "font_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 100
+[08-Jun-2025 19:24:06 Europe/Berlin] PHP Warning:  Attempt to read property "font_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 101
+[08-Jun-2025 19:24:06 Europe/Berlin] PHP Warning:  Attempt to read property "color_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 114
+[08-Jun-2025 19:24:06 Europe/Berlin] PHP Warning:  Attempt to read property "back_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 129
+[08-Jun-2025 19:24:10 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 33
+[08-Jun-2025 19:24:10 Europe/Berlin] PHP Warning:  Attempt to read property "results" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:24:10 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:24:14 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\modules\sidebar.php on line 9
+[08-Jun-2025 19:24:14 Europe/Berlin] PHP Warning:  Attempt to read property "symbol_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\sidebar.php on line 24
+[08-Jun-2025 19:24:14 Europe/Berlin] PHP Warning:  Attempt to read property "title_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\sidebar.php on line 25
+[08-Jun-2025 19:24:18 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 340
+[08-Jun-2025 19:24:18 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 344
+[08-Jun-2025 19:24:18 Europe/Berlin] PHP Warning:  Attempt to read property "title_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 65
+[08-Jun-2025 19:24:18 Europe/Berlin] PHP Warning:  Attempt to read property "symbol_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 83
+[08-Jun-2025 19:24:18 Europe/Berlin] PHP Warning:  Attempt to read property "font_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 100
+[08-Jun-2025 19:24:18 Europe/Berlin] PHP Warning:  Attempt to read property "font_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 101
+[08-Jun-2025 19:24:18 Europe/Berlin] PHP Warning:  Attempt to read property "color_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 114
+[08-Jun-2025 19:24:18 Europe/Berlin] PHP Warning:  Attempt to read property "back_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 129
+[08-Jun-2025 19:24:22 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 33
+[08-Jun-2025 19:24:22 Europe/Berlin] PHP Warning:  Attempt to read property "results" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:24:22 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:24:27 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\modules\sidebar.php on line 9
+[08-Jun-2025 19:24:27 Europe/Berlin] PHP Warning:  Attempt to read property "symbol_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\sidebar.php on line 24
+[08-Jun-2025 19:24:27 Europe/Berlin] PHP Warning:  Attempt to read property "title_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\sidebar.php on line 25
+[08-Jun-2025 19:24:31 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 295
+[08-Jun-2025 19:24:31 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 299
+[08-Jun-2025 19:24:31 Europe/Berlin] PHP Warning:  Attempt to read property "title_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 65
+[08-Jun-2025 19:24:31 Europe/Berlin] PHP Warning:  Attempt to read property "symbol_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 83
+[08-Jun-2025 19:24:31 Europe/Berlin] PHP Warning:  Attempt to read property "font_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 100
+[08-Jun-2025 19:24:31 Europe/Berlin] PHP Warning:  Attempt to read property "font_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 101
+[08-Jun-2025 19:24:31 Europe/Berlin] PHP Warning:  Attempt to read property "color_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 114
+[08-Jun-2025 19:24:31 Europe/Berlin] PHP Warning:  Attempt to read property "back_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 129
+[08-Jun-2025 19:25:26 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 33
+[08-Jun-2025 19:25:26 Europe/Berlin] PHP Warning:  Attempt to read property "results" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:25:26 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:25:30 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\modules\sidebar.php on line 9
+[08-Jun-2025 19:25:30 Europe/Berlin] PHP Warning:  Attempt to read property "symbol_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\sidebar.php on line 24
+[08-Jun-2025 19:25:30 Europe/Berlin] PHP Warning:  Attempt to read property "title_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\sidebar.php on line 25
+[08-Jun-2025 19:25:34 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 340
+[08-Jun-2025 19:25:34 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 344
+[08-Jun-2025 19:25:34 Europe/Berlin] PHP Warning:  Attempt to read property "title_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 65
+[08-Jun-2025 19:25:34 Europe/Berlin] PHP Warning:  Attempt to read property "symbol_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 83
+[08-Jun-2025 19:25:34 Europe/Berlin] PHP Warning:  Attempt to read property "font_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 100
+[08-Jun-2025 19:25:34 Europe/Berlin] PHP Warning:  Attempt to read property "font_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 101
+[08-Jun-2025 19:25:34 Europe/Berlin] PHP Warning:  Attempt to read property "color_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 114
+[08-Jun-2025 19:25:34 Europe/Berlin] PHP Warning:  Attempt to read property "back_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 129
+[08-Jun-2025 19:25:38 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 33
+[08-Jun-2025 19:25:38 Europe/Berlin] PHP Warning:  Attempt to read property "results" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:25:38 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:25:43 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\modules\sidebar.php on line 9
+[08-Jun-2025 19:25:43 Europe/Berlin] PHP Warning:  Attempt to read property "symbol_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\sidebar.php on line 24
+[08-Jun-2025 19:25:43 Europe/Berlin] PHP Warning:  Attempt to read property "title_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\sidebar.php on line 25
+[08-Jun-2025 19:25:47 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 295
+[08-Jun-2025 19:25:47 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 299
+[08-Jun-2025 19:25:47 Europe/Berlin] PHP Warning:  Attempt to read property "title_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 65
+[08-Jun-2025 19:25:47 Europe/Berlin] PHP Warning:  Attempt to read property "symbol_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 83
+[08-Jun-2025 19:25:47 Europe/Berlin] PHP Warning:  Attempt to read property "font_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 100
+[08-Jun-2025 19:25:47 Europe/Berlin] PHP Warning:  Attempt to read property "font_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 101
+[08-Jun-2025 19:25:47 Europe/Berlin] PHP Warning:  Attempt to read property "color_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 114
+[08-Jun-2025 19:25:47 Europe/Berlin] PHP Warning:  Attempt to read property "back_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 129
+[08-Jun-2025 19:25:51 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 33
+[08-Jun-2025 19:25:51 Europe/Berlin] PHP Warning:  Attempt to read property "results" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:25:51 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:25:55 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\modules\sidebar.php on line 9
+[08-Jun-2025 19:25:55 Europe/Berlin] PHP Warning:  Attempt to read property "symbol_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\sidebar.php on line 24
+[08-Jun-2025 19:25:55 Europe/Berlin] PHP Warning:  Attempt to read property "title_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\sidebar.php on line 25
+[08-Jun-2025 19:25:59 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 340
+[08-Jun-2025 19:25:59 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 344
+[08-Jun-2025 19:25:59 Europe/Berlin] PHP Warning:  Attempt to read property "title_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 65
+[08-Jun-2025 19:25:59 Europe/Berlin] PHP Warning:  Attempt to read property "symbol_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 83
+[08-Jun-2025 19:25:59 Europe/Berlin] PHP Warning:  Attempt to read property "font_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 100
+[08-Jun-2025 19:25:59 Europe/Berlin] PHP Warning:  Attempt to read property "font_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 101
+[08-Jun-2025 19:25:59 Europe/Berlin] PHP Warning:  Attempt to read property "color_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 114
+[08-Jun-2025 19:25:59 Europe/Berlin] PHP Warning:  Attempt to read property "back_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 129
+[08-Jun-2025 19:26:03 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 33
+[08-Jun-2025 19:26:03 Europe/Berlin] PHP Warning:  Attempt to read property "results" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:26:03 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:26:07 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\modules\sidebar.php on line 9
+[08-Jun-2025 19:26:07 Europe/Berlin] PHP Warning:  Attempt to read property "symbol_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\sidebar.php on line 24
+[08-Jun-2025 19:26:07 Europe/Berlin] PHP Warning:  Attempt to read property "title_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\sidebar.php on line 25
+[08-Jun-2025 19:26:11 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 295
+[08-Jun-2025 19:26:11 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 299
+[08-Jun-2025 19:26:11 Europe/Berlin] PHP Warning:  Attempt to read property "title_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 65
+[08-Jun-2025 19:26:11 Europe/Berlin] PHP Warning:  Attempt to read property "symbol_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 83
+[08-Jun-2025 19:26:11 Europe/Berlin] PHP Warning:  Attempt to read property "font_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 100
+[08-Jun-2025 19:26:11 Europe/Berlin] PHP Warning:  Attempt to read property "font_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 101
+[08-Jun-2025 19:26:11 Europe/Berlin] PHP Warning:  Attempt to read property "color_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 114
+[08-Jun-2025 19:26:11 Europe/Berlin] PHP Warning:  Attempt to read property "back_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 129
+[08-Jun-2025 19:26:15 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 33
+[08-Jun-2025 19:26:15 Europe/Berlin] PHP Warning:  Attempt to read property "results" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:26:15 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:26:20 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\modules\sidebar.php on line 9
+[08-Jun-2025 19:26:20 Europe/Berlin] PHP Warning:  Attempt to read property "symbol_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\sidebar.php on line 24
+[08-Jun-2025 19:26:20 Europe/Berlin] PHP Warning:  Attempt to read property "title_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\sidebar.php on line 25
+[08-Jun-2025 19:26:20 Europe/Berlin] PHP Warning:  Attempt to read property "title_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 65
+[08-Jun-2025 19:26:20 Europe/Berlin] PHP Warning:  Attempt to read property "symbol_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 83
+[08-Jun-2025 19:26:20 Europe/Berlin] PHP Warning:  Attempt to read property "font_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 100
+[08-Jun-2025 19:26:20 Europe/Berlin] PHP Warning:  Attempt to read property "font_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 101
+[08-Jun-2025 19:26:20 Europe/Berlin] PHP Warning:  Attempt to read property "color_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 114
+[08-Jun-2025 19:26:20 Europe/Berlin] PHP Warning:  Attempt to read property "back_admin" on null in C:\xampp\htdocs\raffle\cms\views\modules\modals\profile.php on line 129
+[08-Jun-2025 19:26:24 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 33
+[08-Jun-2025 19:26:24 Europe/Berlin] PHP Warning:  Attempt to read property "results" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:26:24 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:26:28 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 33
+[08-Jun-2025 19:26:28 Europe/Berlin] PHP Warning:  Attempt to read property "results" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:26:28 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:29:13 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 33
+[08-Jun-2025 19:29:13 Europe/Berlin] PHP Warning:  Attempt to read property "results" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:29:13 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:29:18 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 33
+[08-Jun-2025 19:29:18 Europe/Berlin] PHP Warning:  Attempt to read property "results" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:29:18 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:31:21 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 33
+[08-Jun-2025 19:31:21 Europe/Berlin] PHP Warning:  Attempt to read property "results" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:31:21 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:31:30 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 33
+[08-Jun-2025 19:31:30 Europe/Berlin] PHP Warning:  Attempt to read property "results" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:31:30 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:34:25 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 33
+[08-Jun-2025 19:34:25 Europe/Berlin] PHP Warning:  Attempt to read property "results" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:34:25 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:34:29 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 33
+[08-Jun-2025 19:34:29 Europe/Berlin] PHP Warning:  Attempt to read property "results" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:34:29 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:34:33 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 33
+[08-Jun-2025 19:34:33 Europe/Berlin] PHP Warning:  Attempt to read property "results" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:34:33 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:34:38 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 33
+[08-Jun-2025 19:34:38 Europe/Berlin] PHP Warning:  Attempt to read property "results" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:34:38 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:35:23 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 33
+[08-Jun-2025 19:35:23 Europe/Berlin] PHP Warning:  Attempt to read property "results" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:35:23 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:35:27 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 33
+[08-Jun-2025 19:35:27 Europe/Berlin] PHP Warning:  Attempt to read property "results" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:35:27 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:35:31 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 33
+[08-Jun-2025 19:35:31 Europe/Berlin] PHP Warning:  Attempt to read property "results" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:35:31 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:35:41 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 33
+[08-Jun-2025 19:35:41 Europe/Berlin] PHP Warning:  Attempt to read property "results" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:35:41 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:35:45 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 33
+[08-Jun-2025 19:35:45 Europe/Berlin] PHP Warning:  Attempt to read property "results" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:35:45 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:37:17 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 33
+[08-Jun-2025 19:37:17 Europe/Berlin] PHP Warning:  Attempt to read property "results" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:37:17 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:37:22 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 33
+[08-Jun-2025 19:37:22 Europe/Berlin] PHP Warning:  Attempt to read property "results" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:37:22 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:37:26 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 33
+[08-Jun-2025 19:37:26 Europe/Berlin] PHP Warning:  Attempt to read property "results" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:37:26 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:37:30 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 33
+[08-Jun-2025 19:37:30 Europe/Berlin] PHP Warning:  Attempt to read property "results" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:37:30 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:37:40 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 33
+[08-Jun-2025 19:37:40 Europe/Berlin] PHP Warning:  Attempt to read property "results" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:37:40 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:37:44 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 33
+[08-Jun-2025 19:37:44 Europe/Berlin] PHP Warning:  Attempt to read property "results" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:37:44 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:38:32 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 33
+[08-Jun-2025 19:38:32 Europe/Berlin] PHP Warning:  Attempt to read property "results" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:38:32 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:38:36 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 33
+[08-Jun-2025 19:38:36 Europe/Berlin] PHP Warning:  Attempt to read property "results" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:38:36 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:38:46 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 33
+[08-Jun-2025 19:38:46 Europe/Berlin] PHP Warning:  Attempt to read property "results" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:38:46 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:38:51 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 33
+[08-Jun-2025 19:38:51 Europe/Berlin] PHP Warning:  Attempt to read property "results" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:38:51 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:39:49 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 33
+[08-Jun-2025 19:39:49 Europe/Berlin] PHP Warning:  Attempt to read property "results" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:39:49 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:39:53 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 33
+[08-Jun-2025 19:39:53 Europe/Berlin] PHP Warning:  Attempt to read property "results" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:39:53 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:40:22 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 33
+[08-Jun-2025 19:40:22 Europe/Berlin] PHP Warning:  Attempt to read property "results" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:40:22 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:40:26 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 33
+[08-Jun-2025 19:40:26 Europe/Berlin] PHP Warning:  Attempt to read property "results" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:40:26 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:43:10 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 33
+[08-Jun-2025 19:43:10 Europe/Berlin] PHP Warning:  Attempt to read property "results" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:43:10 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:43:14 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 33
+[08-Jun-2025 19:43:14 Europe/Berlin] PHP Warning:  Attempt to read property "results" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:43:14 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:43:44 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 33
+[08-Jun-2025 19:43:44 Europe/Berlin] PHP Warning:  Attempt to read property "results" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:43:44 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:43:48 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 33
+[08-Jun-2025 19:43:48 Europe/Berlin] PHP Warning:  Attempt to read property "results" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:43:48 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:45:19 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 33
+[08-Jun-2025 19:45:19 Europe/Berlin] PHP Warning:  Attempt to read property "results" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:45:19 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:45:23 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 33
+[08-Jun-2025 19:45:23 Europe/Berlin] PHP Warning:  Attempt to read property "results" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:45:23 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:45:30 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 33
+[08-Jun-2025 19:45:30 Europe/Berlin] PHP Warning:  Attempt to read property "results" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:45:30 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:45:34 Europe/Berlin] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 33
+[08-Jun-2025 19:45:34 Europe/Berlin] PHP Warning:  Attempt to read property "results" on null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39
+[08-Jun-2025 19:45:34 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\raffle\cms\views\template.php on line 39

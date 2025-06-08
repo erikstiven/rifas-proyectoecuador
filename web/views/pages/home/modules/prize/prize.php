@@ -1,16 +1,15 @@
-<?php 
+<?php
 
-$url = "galleries?linkTo=id_product_gallery&equalTo=".$raffle->id_product;
+$url = "galleries?linkTo=id_product_gallery&equalTo=" . $raffle->id_product;
 
-$galleries = CurlController::request($url,$method,$fields);
+$galleries = CurlController::request($url, $method, $fields);
 
-if($galleries->status == 200){
+if ($galleries->status == 200) {
 
     $galleries = $galleries->results;
+} else {
 
-}else{
-
-    $galleries = array(); 
+    $galleries = array();
 }
 
 /*=============================================
@@ -19,9 +18,9 @@ Ticks vendidos
 
 $percent = 0;
 
-if(!empty($sales)){
+if (!empty($sales)) {
 
-    $percent = ceil($totalSales*100/$diff);
+    $percent = ceil($totalSales * 100 / $diff);
 }
 
 ?>
@@ -33,20 +32,20 @@ PRIZE
 
 <div class="container-fluid p-0 position-relative" id="prize">
 
-   <h1 class="display-4 josefin-sans-700 text-uppercase text-center">CONOCE EL PREMIO</h1>
+    <h1 class="display-4 josefin-sans-700 text-uppercase text-center">CONOCE EL PREMIO</h1>
 
-   <div class="container">
+    <div class="container">
 
         <?php if (!empty($galleries)): ?>
-                
-        <!-- Carousel -->
+
+            <!-- Carousel -->
             <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
                 <!-- Indicators/dots -->
                 <div class="carousel-indicators">
 
                     <?php foreach ($galleries as $key => $value): ?>
-                        <button type="button" data-bs-target="#demo" data-bs-slide-to="<?php echo $key ?>" <?php if ($key == 0): ?>class="active"<?php endif ?> ></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="<?php echo $key ?>" <?php if ($key == 0): ?>class="active" <?php endif ?>></button>
                     <?php endforeach ?>
                 </div>
 
@@ -62,7 +61,7 @@ PRIZE
                                 <p><?php echo urldecode($value->description_gallery) ?></p>
                             </div>
                         </div>
-                        
+
                     <?php endforeach ?>
 
                 </div>
@@ -79,38 +78,47 @@ PRIZE
         <?php endif ?>
 
         <div class="row pt-5 py-lg-5">
-            
+
             <div class="col-12 col-lg-8">
-               
-              
-                <h5 class="text-uppercase t1">Participa ahora para tener la oportunidad de ganar</h5> 
-                <h1 class="text-uppercase josefin-sans-700 display-4">The Breeze Zodiac</h1> 
-                <p class="h5">Sorteo <?php echo TemplateController::formatDate(4, urldecode($raffle->end_date_raffle)) ?><small><span class="px-3">|</span><?php echo urldecode($raffle->location_raffle) ?></small></p> 
+
+
+                <h5 class="text-uppercase t1">Participa ahora para tener la oportunidad de ganar</h5>
+                <h1 class="text-uppercase josefin-sans-700 display-4"><?php echo urldecode($raffle->tittle) ?></h1>
+                <p class="h5">Sorteo <?php echo TemplateController::formatDate(4, urldecode($raffle->end_date_raffle)) ?><small><span class="px-3">|</span><?php echo urldecode($raffle->location_raffle) ?></small></p>
 
                 <hr style="border:1px solid #fff">
 
                 <h3>Descripción general del premio</h3>
                 <p><?php echo urldecode($raffle->description_product) ?></p>
-               
+
 
             </div>
 
-            <div class="col-12 col-lg-4 py-5">
-                
-                <div class="card bg bg-light p-4 rounded">
-                    <h3 class="mt-3">Tickets Vendidos</h3>
+            <div class="col-12 col-lg-4 pt-2">
 
-                    <div class="progress my-3">
-                      <div class="progress-bar" style="width:<?php echo $percent ?>%"><?php echo $percent ?>%</div>
-                    </div>
+                <div class="card bg <?php echo isset($template) ? urldecode($template->color1_template) : 'bg-light'; ?> p-4 rounded text-center shadow-sm w-100" style="max-width: 500px; margin-left: auto;">
+                    <h4 class="text-uppercase fw-bold mb-2 text-white" style="letter-spacing: 1px;">
+                        Consulta tus <span style="font-style: italic;">números</span>
+                    </h4>
+                    <p class="text-white mb-3">
+                        ¿Ya hiciste tu compra?<br>
+                        Consulta tus números ingresando aquí tu correo electrónico.
+                    </p>
 
-                     <a href="#main" class="my-4 btn btn-default btn-lg border rounded">Participa Ahora</a>
+                    <form action="/consultar-numeros" method="POST">
+                        <input type="email" name="email" class="form-control mb-3 text-center" placeholder="Correo Electrónico" required>
+
+                        <button type="submit" class="btn btn-outline-light btn-lg w-100 rounded-pill">
+                            CONSULTAR
+                        </button>
+                    </form>
                 </div>
 
             </div>
 
+
         </div>
 
     </div>
-  
+
 </div>
