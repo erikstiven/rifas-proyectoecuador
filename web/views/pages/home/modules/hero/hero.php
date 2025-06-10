@@ -1,6 +1,9 @@
-<!--=================================
-HERO
-==================================-->
+
+<?php
+$url = "galleries?linkTo=id_product_gallery&equalTo=" . $raffle->id_product;
+$galleries = CurlController::request($url, $method, $fields);
+$galleries = ($galleries->status == 200) ? array_slice($galleries->results, 0, 4) : [];
+?>
 
 <div class="container-fluid p-0 position-relative" id="hero">
 

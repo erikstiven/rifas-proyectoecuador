@@ -98,7 +98,7 @@ if ($template->status == 200) {
 
 		if (!empty($routesArray[0])) {
 
-			$allowedPages = ["checkout", "thanks", "consultar"];
+			$allowedPages = ["checkout", "thanks", "consultar", "terms", "policy", "contact"];
 
 			if (in_array($routesArray[0], $allowedPages)) {
 				include "views/pages/" . $routesArray[0] . "/" . $routesArray[0] . ".php";
@@ -111,27 +111,13 @@ if ($template->status == 200) {
 
 
 		include "views/modules/footer/footer.php";
-		include "views/modules/modals/terms.php";
-		include "views/modules/modals/policy.php";
-		include "views/modules/modals/contact.php";
+
 	} else {
 
 		include "views/pages/coming-soon/coming-soon.php";
 	}
 
 	?>
-
-
-
-
-
-
-
-
-
-
-
-
 
 	<script src="/views/assets/js/countdown/countdown.js"></script>
 	<script src="/views/assets/js/main/main.js"></script>

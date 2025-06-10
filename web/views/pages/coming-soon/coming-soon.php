@@ -51,14 +51,14 @@
 
        <div class="social-icons">
            <div class="d-flex flex-row flex-lg-column justify-content-center align-items-center h-100 mt-3 mt-lg-0">
-               <a class="btn btn-dark m-3" href="#!">
-                   <i class="bi bi-twitter"></i>
-               </a>
-               <a class="btn btn-dark m-3" href="#!">
-                   <i class="bi bi-facebook"></i>
-               </a>
-               <a class="btn btn-dark m-3" href="#!">
+               <a class="btn btn-dark m-3" href="https://www.instagram.com/proyectoecuador2025?igsh=cWR2NGIyMmR6bWR3" target="_blank" rel="noopener noreferrer">
                    <i class="bi bi-instagram"></i>
+               </a>
+               <a class="btn btn-dark m-3" href="https://www.tiktok.com/@proyectoecuador?_t=ZM-8x46K61PIXu&_r=1" target="_blank" rel="noopener noreferrer">
+                   <i class="bi bi-tiktok"></i>
+               </a>
+               <a class="btn btn-dark m-3" href="https://wa.me/593996980222" target="_blank" rel="noopener noreferrer">
+                   <i class="bi bi-whatsapp"></i>
                </a>
            </div>
        </div>
